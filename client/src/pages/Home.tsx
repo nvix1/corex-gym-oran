@@ -30,7 +30,7 @@ export default function Home() {
       {/* Navigation */}
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-black/95 backdrop-blur-md border-b border-red-600/30" : "bg-transparent"}`}>
         <div className="container flex items-center justify-between py-4">
-          <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663358506347/aLpGrSUoMhYTjKnNWPhxZ9/corex-logo_3f7daca6.png" alt="Corex Gym" className="h-10 w-auto" />
+          <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663358506347/aLpGrSUoMhYTjKnNWPhxZ9/corex-logo_3f7daca6.png" alt="Corex Gym" className="h-12 w-auto" />
           <div className="hidden md:flex gap-8 text-sm font-medium">
             <a href="#facilities" className="hover:text-red-600 transition-colors">FACILITIES</a>
             <a href="#pricing" className="hover:text-red-600 transition-colors">PRICING</a>
@@ -54,17 +54,18 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-          <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663358506347/aLpGrSUoMhYTjKnNWPhxZ9/corex-logo_3f7daca6.png" alt="Corex Gym Logo" className="h-32 w-auto mx-auto mb-8 logo-glow" />
+          {/* Large Logo */}
+          <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663358506347/aLpGrSUoMhYTjKnNWPhxZ9/corex-logo_3f7daca6.png" alt="Corex Gym Logo" className="h-56 w-auto mx-auto mb-12 logo-glow drop-shadow-2xl" />
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             UNLEASH YOUR <span className="text-red-600">POWER</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-300 mb-8">
+          <p className="text-xl md:text-2xl text-gray-300 mb-12">
             Premium Fitness in Canastel, Oran
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary flex items-center justify-center gap-2">
               <MessageCircle size={20} />
               Join via WhatsApp
@@ -72,22 +73,6 @@ export default function Home() {
             <a href="#contact" className="btn-secondary flex items-center justify-center gap-2">
               Learn More
             </a>
-          </div>
-
-          {/* Quick Stats */}
-          <div className="grid grid-cols-3 gap-4 md:gap-8 text-center">
-            <div>
-              <div className="text-3xl font-bold text-red-600">1500m²</div>
-              <div className="text-sm text-gray-400">Premium Space</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-red-600">5:00-00:00</div>
-              <div className="text-sm text-gray-400">Open Daily</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-red-600">8000 DA</div>
-              <div className="text-sm text-gray-400">Monthly</div>
-            </div>
           </div>
         </div>
       </section>
@@ -98,6 +83,7 @@ export default function Home() {
           <div className="mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">OUR FACILITIES</h2>
             <div className="h-1 bg-gradient-to-r from-red-600 via-red-600 to-transparent w-32"></div>
+            <p className="text-gray-400 mt-4 text-lg">Spread across 1500m² of premium training space</p>
           </div>
 
           {/* Floor 1 */}
@@ -143,7 +129,7 @@ export default function Home() {
           </div>
 
           {/* Floor 2 */}
-          <div>
+          <div className="mb-20">
             <h3 className="text-3xl font-bold mb-8 text-red-600">FLOOR 2 - BODYBUILDING ZONE</h3>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4 order-2 md:order-1">
@@ -183,18 +169,9 @@ export default function Home() {
               />
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Specialized Zones */}
-      <section className="py-24 bg-gray-950">
-        <div className="container">
-          <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">SPECIALIZED ZONES</h2>
-            <div className="h-1 bg-gradient-to-r from-red-600 via-red-600 to-transparent w-32"></div>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
+          {/* Specialized Areas */}
+          <div className="grid md:grid-cols-2 gap-8">
             <div className="card-dark">
               <img
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663358506347/aLpGrSUoMhYTjKnNWPhxZ9/corex-facility-boxing-5KjBVhujKYw6JUWjnaChdk.webp"
@@ -202,28 +179,21 @@ export default function Home() {
                 className="rounded-lg mb-4 h-48 object-cover"
               />
               <h4 className="text-xl font-bold text-red-600 mb-2">Women-Only Zone</h4>
-              <p className="text-gray-400">Dedicated space with Zumba, aerobics, and specialized training</p>
-            </div>
-            <div className="card-dark">
-              <div className="bg-gradient-to-br from-red-600 to-red-900 h-48 rounded-lg mb-4 flex items-center justify-center">
-                <Dumbbell size={64} className="text-white/50" />
-              </div>
-              <h4 className="text-xl font-bold text-red-600 mb-2">Kids Gymnastics</h4>
-              <p className="text-gray-400">Professional classes with certified instructors</p>
+              <p className="text-gray-400">Dedicated space with Zumba, aerobics, and specialized training programs</p>
             </div>
             <div className="card-dark">
               <div className="bg-gradient-to-br from-red-600 to-red-900 h-48 rounded-lg mb-4 flex items-center justify-center">
                 <Award size={64} className="text-white/50" />
               </div>
               <h4 className="text-xl font-bold text-red-600 mb-2">Glutes Corner</h4>
-              <p className="text-gray-400">Specialized equipment for lower body strength</p>
+              <p className="text-gray-400">Specialized equipment and training programs focused on lower body strength</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Amenities */}
-      <section className="py-24 bg-black">
+      <section className="py-24 bg-gray-950">
         <div className="container">
           <div className="mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">PREMIUM AMENITIES</h2>
@@ -252,7 +222,7 @@ export default function Home() {
       </section>
 
       {/* Pricing */}
-      <section id="pricing" className="py-24 bg-gray-950">
+      <section id="pricing" className="py-24 bg-black">
         <div className="container">
           <div className="mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">MEMBERSHIP</h2>
@@ -296,7 +266,7 @@ export default function Home() {
       </section>
 
       {/* Contact & Location */}
-      <section id="contact" className="py-24 bg-black">
+      <section id="contact" className="py-24 bg-gray-950">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Info */}
@@ -381,7 +351,7 @@ export default function Home() {
       </a>
 
       {/* Footer */}
-      <footer className="bg-gray-950 border-t border-gray-800 py-12">
+      <footer className="bg-black border-t border-gray-800 py-12">
         <div className="container">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
