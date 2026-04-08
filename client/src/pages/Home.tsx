@@ -306,7 +306,7 @@ export default function Home() {
                   <Phone className="text-red-600 flex-shrink-0 mt-1" size={28} />
                   <div>
                     <h4 className="font-bold text-lg mb-1">Phone</h4>
-                    <p className="text-gray-400">+213 (0) 123 456 789</p>
+                    <p className="text-gray-400">+213 661 311 319</p>
                   </div>
                 </div>
               </div>
