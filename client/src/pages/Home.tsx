@@ -21,7 +21,7 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const whatsappNumber = "213123456789";
+  const whatsappNumber = "213661311319";
   const whatsappMessage = "Bonjour! Je suis intéressé par une adhésion à Corex Gym Canastel.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
@@ -55,22 +55,22 @@ export default function Home() {
 
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
           {/* Large Logo */}
-          <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663358506347/aLpGrSUoMhYTjKnNWPhxZ9/corex-logo_3f7daca6.png" alt="Corex Gym Logo" className="h-56 w-auto mx-auto mb-12 logo-glow drop-shadow-2xl" />
+          <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663358506347/aLpGrSUoMhYTjKnNWPhxZ9/corex-logo_3f7daca6.png" alt="Corex Gym Logo" className="h-56 w-auto mx-auto mb-12 logo-glow drop-shadow-2xl animate-fade-in-down" />
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             UNLEASH YOUR <span className="text-red-600">POWER</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-300 mb-12">
-            Premium Fitness in Canastel, Oran
+          <p className="text-xl md:text-2xl text-gray-300 mb-12 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+            Premium Fitness
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary flex items-center justify-center gap-2">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-red-600/50 transition-all duration-300">
               <MessageCircle size={20} />
               Join via WhatsApp
             </a>
-            <a href="#contact" className="btn-secondary flex items-center justify-center gap-2">
+            <a href="#contact" className="btn-secondary flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-red-600/30 transition-all duration-300">
               Learn More
             </a>
           </div>
