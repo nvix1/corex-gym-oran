@@ -49,12 +49,12 @@ export default function Home() {
             alt="Hero Background"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/60"></div>
+          <div className="absolute inset-0 bg-black/30"></div>
         </div>
 
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
           {/* Large Logo */}
-          <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663358506347/aLpGrSUoMhYTjKnNWPhxZ9/corex-logo-new_25b233ab.png" alt="Corex Gym Logo" className="h-80 w-auto mx-auto mb-12 logo-glow drop-shadow-2xl animate-fade-in-down" />
+          <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663358506347/aLpGrSUoMhYTjKnNWPhxZ9/corex-logo-transparent-oUSHrSGX5srpQgCTmmaK8J.webp" alt="Corex Gym Logo" className="h-80 w-auto mx-auto mb-12 logo-glow drop-shadow-2xl animate-fade-in-down" />
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             UNLEASH YOUR <span className="text-red-600">POWER</span>
