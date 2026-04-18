@@ -30,7 +30,6 @@ export default function Home() {
       {/* Navigation */}
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-black/95 backdrop-blur-md border-b border-red-600/30" : "bg-transparent"}`}>
         <div className="container flex items-center justify-between py-4">
-          <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663358506347/aLpGrSUoMhYTjKnNWPhxZ9/corex-logo_3f7daca6.png" alt="Corex Gym" className="h-12 w-auto" />
           <div className="hidden md:flex gap-8 text-sm font-medium">
             <a href="#facilities" className="hover:text-red-600 transition-colors">FACILITIES</a>
             <a href="#pricing" className="hover:text-red-600 transition-colors">PRICING</a>
@@ -55,8 +54,7 @@ export default function Home() {
 
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
           {/* Large Logo */}
-          <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663358506347/aLpGrSUoMhYTjKnNWPhxZ9/corex-logo_3f7daca6.png" alt="Corex Gym Logo" className="h-56 w-auto mx-auto mb-4 logo-glow drop-shadow-2xl animate-fade-in-down" />
-          <p className="text-sm md:text-base text-red-600 font-semibold mb-12 animate-fade-in-up" style={{ animationDelay: '0.15s' }}>BY GHOLDINON</p>
+          <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663358506347/aLpGrSUoMhYTjKnNWPhxZ9/corex-logo-new_25b233ab.png" alt="Corex Gym Logo" className="h-80 w-auto mx-auto mb-12 logo-glow drop-shadow-2xl animate-fade-in-down" />
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             UNLEASH YOUR <span className="text-red-600">POWER</span>
